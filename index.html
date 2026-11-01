@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ゲームプログラマーのポートフォリオ。ゲーム作品、スキル、連絡先をご紹介します。">
+<title>YOUR NAME — Game Programmer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="works.css">
+</head>
+<body>
+<header class="header"><a class="logo" href="#home" aria-label="トップへ"><span class="logo-mark">✳</span> YOUR NAME<span class="logo-dot">.</span></a><nav aria-label="メインナビゲーション"><a href="#works">Works</a><a href="#about">About</a><a href="#contact">Contact <span>↗</span></a></nav></header>
+<main>
+<section class="hero wrap" id="home">
+<div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> GAME PROGRAMMER / PORTFOLIO</p><h1>遊びをつくる。<br>心が<span class="pink-text">動く</span>、<br>その瞬間を<span class="blue-text">。</span></h1><p class="intro">ここに、あなたのものづくりへの想いや<br>自己紹介を入力できます。</p><a class="button" href="#works">ゲーム作品を見る <span>↓</span></a></div>
+<div class="hero-art" aria-hidden="true"><span class="art-label">A LITTLE PLAY, EVERY DAY.</span><span class="spark spark-one">✦</span><span class="spark spark-two">+</span><div class="orbit"></div><div class="game-device"><div class="device-top"><span>PLAY / CREATE</span><i></i></div><div class="screen"><span class="screen-star">✦</span><div class="pixel-heart">♥</div><span class="screen-title">HELLO,<br>PLAYER.</span><span class="screen-start">PRESS START ▸</span><span class="screen-floor"></span></div><div class="controls"><div class="dpad"></div><span class="small-controls">•••</span><div class="game-buttons"><i></i><i></i></div></div></div><span class="art-sticker">made with<br><b>curiosity ✳</b></span><span class="art-note">ひらめきを、遊べるかたちに。</span></div>
+<div class="hero-bottom"><span>CODE. PLAY. REPEAT.</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
+<section class="works-section" id="works"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORKS</p><h2>つくったゲーム<span class="pink-text">.</span></h2></div><span class="section-note">アイデアから、遊べるかたちへ。</span></div>
+<div class="works-list" id="works-list"></div>
+<noscript><p>作品の表示にはJavaScriptを有効にしてください。</p></noscript>
+<template id="work-template">
+  <article class="work">
+    <header class="work-header">
+      <div><p class="eyebrow project-number"></p><h3 class="project-title"></h3></div>
+      <span class="project-genre"></span>
+    </header>
+    <div class="work-layout">
+      <div class="work-media">
+        <figure class="gameplay-figure">
+          <div class="media-heading"><span>GAMEPLAY</span><span>プレイ映像</span></div>
+          <div class="video-frame">
+            <div class="video-placeholder"><span class="film-icon" aria-hidden="true">▷</span><strong>プレイ映像をここに</strong><span>動画は準備中です</span></div>
+          </div>
+          <figcaption class="video-caption"></figcaption>
+        </figure>
+        <figure class="thumbnail-figure">
+          <div class="thumbnail-frame"><span class="thumbnail-placeholder" aria-hidden="true">✳</span></div>
+          <figcaption><span>SCREENSHOT</span><p class="thumbnail-caption"></p></figcaption>
+        </figure>
+      </div>
+      <div class="work-overview">
+        <h4>ゲームについて</h4><p class="project-description"></p>
+        <dl class="project-facts"></dl>
+        <div class="project-resources" aria-label="作品へのリンク"></div>
+      </div>
+    </div>
+    <div class="development-highlight"><span class="highlight-symbol" aria-hidden="true">✦</span><div><h4>実装のこだわり</h4><p class="project-highlight"></p></div></div>
+    <details class="work-details">
+      <summary><span>開発の工夫・担当内容</span><span class="summary-caption">DEVELOPMENT NOTES</span><span class="summary-toggle" aria-hidden="true"></span></summary>
+      <div class="detail-content development-content"></div>
+    </details>
+    <details class="work-details">
+      <summary><span>遊び方・制作資料</span><span class="summary-caption">PLAY GUIDE & CREDITS</span><span class="summary-toggle" aria-hidden="true"></span></summary>
+      <div class="detail-content guide-content"></div>
+    </details>
+  </article>
+</template>
+</div></section>
+<section class="about wrap" id="about"><div class="section-heading"><div><p class="eyebrow">02 / ABOUT & SKILLS</p><h2>わたしについて<span class="blue-text">.</span></h2></div><span class="little-star" aria-hidden="true">✳</span></div><div class="about-grid"><div><p class="role">GAME PROGRAMMER</p><h3 class="name">あなたの名前</h3><p class="about-text">ここにプロフィールを入力できます。<br>好きなゲーム、制作で大切にしていること、<br>これから挑戦したいことなど。</p></div><div class="skills"><div><span class="skill-number">01</span><h3>Languages</h3><p>使用言語を入力</p></div><div><span class="skill-number">02</span><h3>Engines & Tools</h3><p>ゲームエンジン・開発ツールを入力</p></div><div><span class="skill-number">03</span><h3>Interests</h3><p>得意な分野・興味のある技術を入力</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><p class="eyebrow">03 / GET IN TOUCH</p><h2>次のつながりを、<br>ここから<span class="pink-text">。</span><span class="contact-star" aria-hidden="true">✳</span></h2><p>SNSや連絡先を、こちらに掲載できます。</p><div class="socials"><span>GitHub <small>リンク準備中</small></span><span>X / Twitter <small>リンク準備中</small></span><span>Email <small>連絡先準備中</small></span></div></div></section>
+</main><footer class="wrap"><span>© <span id="year"></span> YOUR NAME</span><span>THANK YOU FOR PLAYING <span class="pink-text">✦</span></span><a href="#home">BACK TO TOP ↑</a></footer>
+<script src="works.js"></script>
+<script src="script.js"></script>
+</body></html>
