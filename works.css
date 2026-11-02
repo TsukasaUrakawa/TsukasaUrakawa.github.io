@@ -81,3 +81,27 @@ a.resource-link:hover { background: var(--tint); border-color: var(--accent); co
   .thumbnail-figure { gap: 12px; }
   .thumbnail-frame { width: 100px; }
 }
+
+/* 文章を入れた状態での読みやすさと、小さい画面への対応。 */
+.logo { white-space: nowrap; }
+.skills p { line-height: 1.9; }
+.about-text { overflow-wrap: anywhere; }
+.socials { flex-wrap: wrap; }
+.socials > a {
+  font: 14px Arial, sans-serif;
+  border-bottom: 1px solid #cbd4dc;
+  padding-bottom: 12px;
+  min-width: 150px;
+  overflow-wrap: anywhere;
+}
+.socials > a:hover { color: #a73e68; }
+.work .project-genre { flex-shrink: 1; overflow-wrap: anywhere; }
+.project-facts dt { flex-shrink: 0; }
+@media (max-width: 760px) {
+  .socials > a { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+  .hero h1 { font-size: clamp(30px, 7.3vw, 43px); }
+}
+@media (max-width: 540px) {
+  .header { height: auto; padding: 18px 0; flex-direction: column; gap: 18px; align-items: flex-start; }
+  .header nav { gap: 28px; }
+}
