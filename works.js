@@ -9,7 +9,8 @@ window.portfolioWorks = [
     "period": "2026年7月31日〜 制作中",
     "team": "個人制作",
     "role": "企画・実装",
-    "language": "C# / JoyShockLibrary / DOTween",
+    "language": "C#",
+    "libraries": "JoyShockLibrary / DOTween",
     "engine": "Unity 6000.0.75f1",
     "platform": "Windows",
     "highlight": "コントローラーの動きと迷路の回転が直感的につながるよう、ジャイロ入力を調整しました。迷路はProBuilderを使い、形状の作成から配置まで自分で行っています。",
@@ -68,10 +69,11 @@ window.portfolioWorks = [
     "period": "2026年6月7日〜（unityroom公開済み）",
     "team": "個人制作（AIを活用）",
     "role": "初期版の制作／AIを活用したUI・操作性・素材のブラッシュアップ",
-    "language": "C# / DOTween",
+    "language": "C#",
+    "libraries": "DOTween",
     "engine": "Unity 6000.0.75f1",
     "platform": "PCブラウザ（WebGL / unityroom）",
-    "highlight": "Codexと画像生成AIを活用し、UIデザイン、操作処理の改善、素材作成を進めました。選択中の本の強調表示、配置先のプレビュー、棚の中での移動・入れ替えなど、次の操作が分かる見せ方と、並べ直しやすさを重視しています。",
+    "highlight": "CodexとOpenAIの画像生成機能を活用し、UIデザイン、操作処理の改善、素材作成を進めました。選択中の本の強調表示、配置先のプレビュー、棚の中での移動・入れ替えなど、次の操作が分かる見せ方と、並べ直しやすさを重視しています。",
     "thumbnail": "",
     "thumbnailCaption": "Shelf Careのスクリーンショットは準備中です。",
     "video": "https://youtu.be/4qP1IyybPLQ",
@@ -90,7 +92,7 @@ window.portfolioWorks = [
       },
       {
         "title": "担当範囲・AIの活用範囲",
-        "text": "初期版を個人で制作し、今回のブラッシュアップではCodexと画像生成AIを活用しました。AIの利用範囲は、UIのデザインとその実装、操作性を改善するコードの修正、画像素材の作成です。\n改修版のコードやビジュアルにはAIによる制作・修正を含みます。本の背表紙をつなぐ幾何学模様や、unityroom用アイコンの作成にも画像生成AIを使用しています。"
+        "text": "初期版を個人で制作し、今回のブラッシュアップでは、UI・操作処理の改修にCodex、画像素材の作成にOpenAIの画像生成機能（Codex内で使用）を活用しました。AIの利用範囲は、UIのデザインとその実装、操作性を改善するコードの修正、画像素材の作成です。\n改修版のコードやビジュアルにはAIによる制作・修正を含みます。本の背表紙をつなぐ幾何学模様や、unityroom用アイコンも、この画像生成機能で作成しています。"
       },
       {
         "title": "UI・ビジュアルの改善",
@@ -106,7 +108,7 @@ window.portfolioWorks = [
       },
       {
         "title": "開発環境・制作の進め方",
-        "text": "Unity 6000.0.75f1 / C# / DOTweenを使用しています。Codexを使ってUIや操作処理を改修し、画像生成AIで作成した素材をUnityへ組み込みました。\n開発時には、本の取り出し・配置・入れ替え、保存と再開、画面サイズによる表示を確認しました。WebGLビルド後は、ブラウザ上の操作や再読み込み後の保存データの復元も確認し、unityroomへ公開しています。"
+        "text": "Unity 6000.0.75f1 / C# / DOTweenを使用しています。Codexを使ってUIや操作処理を改修し、OpenAIの画像生成機能で作成した素材をUnityへ組み込みました。\n開発時には、本の取り出し・配置・入れ替え、保存と再開、画面サイズによる表示を確認しました。WebGLビルド後は、ブラウザ上の操作や再読み込み後の保存データの復元も確認し、unityroomへ公開しています。"
       }
     ],
     "guide": [
@@ -124,7 +126,7 @@ window.portfolioWorks = [
       },
       {
         "title": "利用素材・クレジット",
-        "text": "AI活用：CodexによるUI・操作処理の改修、画像生成AIによる幾何学模様・公開用アイコンなどの素材作成。\nUIアニメーション・画面遷移：DOTween（Demigiant）。\n段ボールのモデル：Cardboard Box (Rigged)（WeanWind / Ezereal）。\nフォント：Zen Maru Gothic / EB Garamond。\n音源の作者・配布元は確認中です。"
+        "text": "AI活用：CodexによるUI・操作処理の改修。\n画像素材：OpenAIの画像生成機能（Codex内で使用）による幾何学模様・公開用アイコンなどの作成。\nUIアニメーション・画面遷移：DOTween（Demigiant）。\n段ボールのモデル：Cardboard Box (Rigged)（WeanWind / Ezereal）。\nフォント：Zen Maru Gothic / EB Garamond。\n音源の作者・配布元は確認中です。"
       }
     ]
   }

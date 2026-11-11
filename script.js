@@ -113,7 +113,8 @@ const template = document.getElementById('work-template');
   });
   const facts = article.querySelector('.project-facts');
   [['制作期間', work.period], ['制作体制', work.team], ['担当', work.role],
-    ['使用言語', work.language], ['エンジン', work.engine], ['対応環境', work.platform]]
+    ['使用言語', work.language], ['ライブラリ', work.libraries],
+    ['エンジン', work.engine], ['対応環境', work.platform]]
     .forEach(([label, value]) => {
       const row = document.createElement('div');
       const term = document.createElement('dt');
