@@ -14,7 +14,7 @@ window.portfolioWorks = [
     "engine": "Unity 6000.0.75f1",
     "platform": "Windows",
     "highlight": "コントローラーの動きと迷路の回転が直感的につながるよう、ジャイロ入力を調整しました。迷路はProBuilderを使い、形状の作成から配置まで自分で行っています。",
-    "thumbnail": "assets/cubemaze-title.png",
+    "thumbnail": "cubemaze-title.png",
     "thumbnailCaption": "Cube Mazeのタイトル画面です。",
     "video": "https://youtu.be/9qpwIKrR8LE",
     "videoCaption": "迷路を回転させながら、ボールをゴールへ導くCube Mazeのプレイ映像です。",
