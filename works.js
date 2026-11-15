@@ -14,8 +14,8 @@ window.portfolioWorks = [
     "engine": "Unity 6000.0.75f1",
     "platform": "Windows",
     "highlight": "コントローラーの動きと迷路の回転が直感的につながるよう、ジャイロ入力を調整しました。迷路はProBuilderを使い、形状の作成から配置まで自分で行っています。",
-    "thumbnail": "cubemaze-title.png",
-    "thumbnailCaption": "Cube Mazeのタイトル画面です。",
+    "thumbnail": "cubemaze-gameplay.png",
+    "thumbnailCaption": "Cube Mazeのプレイ画面です。迷路とボール、迷路操作・カメラ操作のガイドを表示しています。",
     "video": "https://youtu.be/9qpwIKrR8LE",
     "videoCaption": "迷路を回転させながら、ボールをゴールへ導くCube Mazeのプレイ映像です。",
     "captions": "",
@@ -90,7 +90,9 @@ window.portfolioWorks = [
         "title": "利用素材・クレジット",
         "text": "迷路の作成・配置：ProBuilderを使用。\n使用ライブラリ：JoyShockLibrary / DOTween / Cinemachine。\nその他の素材・ライセンスの表記は、確認後に追記します。"
       }
-    ]
+    ],
+    "thumbnailAlt": "Cube Mazeの立体迷路とボール、画面下部の操作ガイド",
+    "thumbnailLabel": "SCREENSHOT"
   },
   {
     "title": "Shelf Care",
@@ -104,8 +106,8 @@ window.portfolioWorks = [
     "engine": "Unity 6000.0.75f1",
     "platform": "PCブラウザ（WebGL / unityroom）",
     "highlight": "CodexとOpenAIの画像生成機能を活用し、UIデザイン、操作処理の改善、素材作成を進めました。選択中の本の強調表示、配置先のプレビュー、棚の中での移動・入れ替えなど、次の操作が分かる見せ方と、並べ直しやすさを重視しています。",
-    "thumbnail": "",
-    "thumbnailCaption": "Shelf Careのスクリーンショットは準備中です。",
+    "thumbnail": "shelf-care-gameplay.png",
+    "thumbnailCaption": "完成した本棚の画面です。本の背表紙がつながり、1つの幾何学模様になります。",
     "video": "https://youtu.be/4qP1IyybPLQ",
     "videoCaption": "AIを活用したブラッシュアップ後のプレイ映像です。タイトル画面と、本の取り出し・配置・入れ替えの流れを紹介しています。",
     "captions": "",
@@ -220,7 +222,9 @@ window.portfolioWorks = [
         "label": "プレイ時間",
         "value": "約30分（想定）"
       }
-    ]
+    ],
+    "thumbnailAlt": "Shelf Careで完成したベージュの本棚と、背表紙につながる幾何学模様",
+    "thumbnailLabel": "SCREENSHOT"
   },
   {
     "title": "BubblePop",
