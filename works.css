@@ -110,3 +110,7 @@ a.resource-link:hover { background: var(--tint); border-color: var(--accent); co
 .note-links { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 12px; }
 .note-link { color: var(--accent); font-size: 11px; line-height: 1.8; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .note-link:hover { text-decoration-thickness: 2px; }
+
+/* 縦画面のプレイ動画を、スマートフォンの比率で表示します。 */
+.video-frame.is-portrait { aspect-ratio: 9 / 16; max-width: 320px; margin-inline: auto; }
+.video-frame.is-portrait iframe, .video-frame.is-portrait video { aspect-ratio: 9 / 16; }

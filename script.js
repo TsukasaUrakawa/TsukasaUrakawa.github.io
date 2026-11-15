@@ -50,12 +50,13 @@ function appendNotes(container, notes) {
 }
 
 function setupMedia(article, work) {
+  if (work.thumbnailLabel) article.querySelector('.thumbnail-figure figcaption > span').textContent = work.thumbnailLabel;
   const thumbnail = usableUrl(work.thumbnail);
   if (thumbnail) {
     const frame = article.querySelector('.thumbnail-frame');
     const image = document.createElement('img');
     image.src = thumbnail;
-    image.alt = `${work.title}のスクリーンショット`;
+    image.alt = work.thumbnailAlt || `${work.title}のスクリーンショット`;
     image.loading = 'lazy';
     image.addEventListener('error', () => { frame.textContent = '画像を読み込めません'; });
     frame.replaceChildren(image);
@@ -63,6 +64,7 @@ function setupMedia(article, work) {
   const videoUrl = usableUrl(work.video);
   if (!videoUrl) return;
   const frame = article.querySelector('.video-frame');
+  frame.classList.toggle('is-portrait', work.videoAspect === 'portrait');
   const id = youtubeId(videoUrl);
   if (id) {
     const embed = document.createElement('iframe');

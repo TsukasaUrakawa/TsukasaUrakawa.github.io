@@ -234,10 +234,10 @@ window.portfolioWorks = [
     "engine": "Unity 6000.3.24f1",
     "platform": "Android（縦画面）",
     "highlight": "通常時の直線操作と、フィーバー中の自由ななぞり操作を切り替える構成です。終点候補や消去予定の泡を見た目で示し、犬が泡を追う動き、消去時の効果音・粒子・得点表示を組み合わせています。",
-    "thumbnail": "",
-    "thumbnailCaption": "BubblePopのスクリーンショットは準備中です。",
-    "video": "",
-    "videoCaption": "BubblePopのプレイ映像は準備中です。",
+    "thumbnail": "bubblepop-feature.png",
+    "thumbnailCaption": "BubblePopの紹介画像です。",
+    "video": "https://www.youtube.com/shorts/caUg3j6xC7Y",
+    "videoCaption": "BubblePopのプレイ映像です。Android向けの縦画面でのプレイを紹介しています。",
     "captions": "",
     "links": {
       "play": "",
@@ -274,7 +274,7 @@ window.portfolioWorks = [
       },
       {
         "title": "動作環境・掲載状況",
-        "text": "対応環境：Android／縦画面／タッチ操作。\nゲーム内UIは英語です。結果画面には得点・自己ベスト・最大同時消去数を表示します。\n公開用のプレイ先・ダウンロードリンク・プレイ動画は、現在このページには掲載していません。\nソースコードのリポジトリは現在非公開です。"
+        "text": "対応環境：Android／縦画面／タッチ操作。\nゲーム内UIは英語です。結果画面には得点・自己ベスト・最大同時消去数を表示します。\nプレイ動画を掲載しています。公開用のプレイ先・ダウンロードリンクは、現在このページには掲載していません。\nソースコードのリポジトリは現在非公開です。"
       },
       {
         "title": "AI利用・クレジット",
@@ -283,6 +283,9 @@ window.portfolioWorks = [
     ],
     "linkStatus": {
       "source": "非公開"
-    }
+    },
+    "thumbnailAlt": "BubblePopのロゴと、カラフルな泡に手を伸ばす犬の紹介画像",
+    "thumbnailLabel": "PROMO IMAGE",
+    "videoAspect": "portrait"
   }
 ];
