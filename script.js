@@ -31,6 +31,20 @@ function appendNotes(container, notes) {
     heading.textContent = note.title;
     text.textContent = note.text;
     section.append(heading, text);
+    const references = document.createElement('div');
+    references.className = 'note-links';
+    (note.links || []).forEach(reference => {
+      const url = usableUrl(reference.url);
+      if (!url || !reference.label) return;
+      const link = document.createElement('a');
+      link.className = 'note-link';
+      link.href = url;
+      link.textContent = reference.label + ' ↗';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      references.append(link);
+    });
+    if (references.childElementCount) section.append(references);
     container.append(section);
   });
 }
@@ -115,6 +129,7 @@ const template = document.getElementById('work-template');
   [['制作期間', work.period], ['制作体制', work.team], ['担当', work.role],
     ['使用言語', work.language], ['ライブラリ', work.libraries],
     ['エンジン', work.engine], ['対応環境', work.platform]]
+    .concat((work.extraFacts || []).map(fact => [fact.label, fact.value]))
     .forEach(([label, value]) => {
       const row = document.createElement('div');
       const term = document.createElement('dt');
@@ -132,7 +147,7 @@ const template = document.getElementById('work-template');
       element.className = 'resource-link';
       element.textContent = label;
       const status = document.createElement('span');
-      status.textContent = url ? '↗' : '準備中';
+      status.textContent = url ? '↗' : (work.linkStatus?.[key] || '未掲載');
       if (url) {
         element.href = url;
         element.target = '_blank';
