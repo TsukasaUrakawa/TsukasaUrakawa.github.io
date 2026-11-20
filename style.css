@@ -109,3 +109,4 @@ a.resource-link:active {
     transform: none !important;
   }
 }
+.hero-meta{font-size:12px;line-height:2;color:var(--muted);margin:0 0 22px}
